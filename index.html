@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — SubCal (订阅日历)</title>
+  <meta name="description" content="Privacy Policy for SubCal (com.kiri.limited.subcal) Android application." />
+  <style>
+    :root {
+      --bg: #f6f5f2;
+      --card: #ffffff;
+      --text: #18181b;
+      --muted: #52525b;
+      --border: #e4e4e7;
+      --accent: #18181b;
+      --code-bg: #f4f4f5;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f0f11;
+        --card: #18181b;
+        --text: #f4f4f5;
+        --muted: #a1a1aa;
+        --border: #27272a;
+        --accent: #f4f4f5;
+        --code-bg: #27272a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 32px 16px 64px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 36px 32px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 20px;
+      margin-bottom: 28px;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--code-bg);
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+    }
+    .meta {
+      margin: 0;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    nav {
+      margin-top: 14px;
+      font-size: 14px;
+    }
+    nav a {
+      color: var(--accent);
+      text-decoration: underline;
+      margin-right: 16px;
+    }
+    h2 {
+      margin-top: 32px;
+      margin-bottom: 12px;
+      font-size: 20px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+    }
+    h3 {
+      margin-top: 20px;
+      margin-bottom: 6px;
+      font-size: 16px;
+    }
+    p, li {
+      font-size: 15px;
+    }
+    ul, ol {
+      padding-left: 22px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 13px;
+      background: var(--code-bg);
+      padding: 2px 6px;
+      border-radius: 5px;
+    }
+    .divider {
+      border: 0;
+      border-top: 1px solid var(--border);
+      margin: 36px 0;
+    }
+    footer {
+      margin-top: 36px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--muted);
+    }
+    a {
+      color: var(--accent);
+    }
+    @media (max-width: 600px) {
+      main { padding: 24px 20px; }
+      h1 { font-size: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">com.kiri.limited.subcal</div>
+      <h1>Privacy Policy / 隐私政策 — SubCal</h1>
+      <p class="meta">
+        <strong>Application:</strong> SubCal (订阅日历) &nbsp;|&nbsp;
+        <strong>Developer:</strong> Kiri Limited (anilpixel) &nbsp;|&nbsp;
+        <strong>Effective Date:</strong> November 10, 2026
+      </p>
+      <nav aria-label="Language navigation">
+        <a href="#english">English</a>
+        <a href="#zh-cn">简体中文</a>
+      </nav>
+    </header>
+
+    <section id="english">
+      <h2>English</h2>
+      <p>
+        <strong>SubCal</strong> (package ID: <code>com.kiri.limited.subcal</code>) is developed and published by Kiri Limited with a strict local-first privacy architecture. This Privacy Policy explains how SubCal handles information and device permissions.
+      </p>
+      <ol>
+        <li>
+          <strong>On-Device Storage Only (No Personal Data Collection):</strong>
+          All subscription entries, prices, billing dates, payment channel labels, and custom exchange rates you enter are stored exclusively locally on your device using Android <code>SharedPreferences</code>. We do not operate backend user databases and do not collect, transmit, store, sell, or share any personal or financial data.
+        </li>
+        <li>
+          <strong>Network Access Permission (<code>android.permission.INTERNET</code>):</strong>
+          Used strictly over encrypted HTTPS when you request a live foreign-exchange reference rate update. These requests query public exchange-rate endpoints without transmitting any personal information, account data, or device identifiers.
+        </li>
+        <li>
+          <strong>Local Notifications Permission (<code>android.permission.POST_NOTIFICATIONS</code>):</strong>
+          Used solely by on-device Android <code>WorkManager</code> scheduled tasks to calculate upcoming subscription renewal dates locally and display renewal reminder notifications on your device.
+        </li>
+        <li>
+          <strong>No Advertising ID, Analytics, or Third-Party Trackers:</strong>
+          SubCal does <strong>not</strong> access or use the Android Advertising ID (<code>AD_ID</code>), contains no advertising SDKs or third-party behavioral analytics trackers, and requires no account registration or sign-in.
+        </li>
+        <li>
+          <strong>Data Retention &amp; Deletion:</strong>
+          Because all data resides locally on your device, you retain full control at all times. You may edit or delete individual subscription records directly inside the app, or permanently erase all app data by clearing storage in Android Settings or uninstalling SubCal.
+        </li>
+        <li>
+          <strong>Children's Privacy &amp; Policy Updates:</strong>
+          SubCal does not knowingly collect personal information from anyone, including children under 13. Any future updates to this Privacy Policy will be published on this page with an updated effective date.
+        </li>
+      </ol>
+      <p>
+        <strong>Contact Us:</strong> If you have any questions about this Privacy Policy, please contact us by email at
+        <a href="mailto:eziosyanse@gmail.com">eziosyanse@gmail.com</a> or open an issue on GitHub at
+        <a href="https://github.com/anilpixel/subcal-privacy/issues">https://github.com/anilpixel/subcal-privacy/issues</a>.
+      </p>
+    </section>
+
+    <hr class="divider" />
+
+    <section id="zh-cn" lang="zh-CN">
+      <h2>简体中文</h2>
+      <p>
+        <strong>SubCal（订阅日历）</strong>（应用包名：<code>com.kiri.limited.subcal</code>）由 Kiri Limited 开发与发布，采用严格的“本地优先”隐私架构。本隐私政策说明应用如何处理数据与系统权限：
+      </p>
+      <ol>
+        <li>
+          <strong>纯本地存储（不收集个人数据）：</strong>
+          您录入的所有订阅项目、金额、扣款日期、扣款渠道备注及自定义汇率均仅保存在您设备本地存储（<code>SharedPreferences</code>）中，不会上传至开发者服务器，我们也不会收集、存储、出售或向第三方共享您的任何个人或账单数据。
+        </li>
+        <li>
+          <strong>网络访问权限说明（<code>android.permission.INTERNET</code>）：</strong>
+          仅当您主动请求更新实时参考汇率时，应用会通过加密 HTTPS 向公开汇率接口发起标准汇率查询请求，请求中不包含任何个人身份信息或设备标识符。
+        </li>
+        <li>
+          <strong>通知提醒权限说明（<code>android.permission.POST_NOTIFICATIONS</code>）：</strong>
+          仅用于在设备本地通过 Android <code>WorkManager</code> 定时计算即将到期的订阅项目，并向您推送本地续费提醒通知。
+        </li>
+        <li>
+          <strong>不使用广告 ID 与第三方追踪：</strong>
+          本应用<strong>不读取、不使用</strong> Android 广告 ID（<code>AD_ID</code>），不包含任何第三方广告 SDK 或用户行为分析追踪器，且无需注册登录账号即可使用。
+        </li>
+        <li>
+          <strong>数据保留与删除：</strong>
+          由于所有数据均保存在您的手机本地，您可随时在应用内删除任意订阅记录，或通过系统“设置 → 应用 → 清除存储空间”及卸载应用来彻底清除全部本地数据。
+        </li>
+        <li>
+          <strong>政策更新说明：</strong>
+          如本隐私政策发生变更，我们将在此页面同步发布最新版本并更新生效日期。
+        </li>
+      </ol>
+      <p>
+        <strong>联系我们：</strong>如有任何隐私相关问题，请发送邮件至
+        <a href="mailto:eziosyanse@gmail.com">eziosyanse@gmail.com</a>，或通过 GitHub Issues 提交反馈：
+        <a href="https://github.com/anilpixel/subcal-privacy/issues">https://github.com/anilpixel/subcal-privacy/issues</a>。
+      </p>
+    </section>
+
+    <footer>
+      &copy; 2026 Kiri Limited. All rights reserved. — SubCal (<code>com.kiri.limited.subcal</code>)
+    </footer>
+  </main>
+</body>
+</html>
